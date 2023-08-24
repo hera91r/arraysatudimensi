@@ -6,16 +6,23 @@ int main()
 {
   //mendeklarasikan teks1 dan teks2
   char teks1[10], teks2 [10];
-  int jlhdepan, jlhke
-//menampilkan pesan u/ meminta masukan dari pengguna
+  int jlhdepan, jlhkel, jlhhurf;
+  
+  //menampilkan pesan u/ meminta masukan dari pengguna
   cout << "Masukkan Nama Depan Anda?";
   cin >> teks1;
   cout << "Masukkan Nama Keluarga Anda?";
   cin >> teks2;
-//menggabungkan teks 2 ke teks1
-  strcat(teks1, teks2);
-//menampilkan hasil ke pengguna
-  cout << "Nama Lengkap Anda: " << teks1 << endl;
+  //menghitung panjang teks
+  jlhdepan = strlen(teks1);
+  jlhkel = strlen(teks2);
+  jlhhuruf = jlhdepan + jlhkel;
+  
+  //menampilkan hasil ke pengguna
+cout << "Nama Lengkap Anda: " << teks1 << " " << teks2 <<
+endl;
+cout << "Jumlah Huruf Nama Anda : " << jlhhurf << " Huruf "
+<<endl;
   system ("PAUSE");
   return 0;
 }
