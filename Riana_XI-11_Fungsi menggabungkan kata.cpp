@@ -1,29 +1,28 @@
 #include <cstdlib>
 #include <iostream>
+#include <cstring>
 using namespace std;
-
 int main()
 {
-//mendeklarasikan array dan variabel
-int array1 [5] = {7, 6, 9, 1, 16};
-int array2 [5];
-int tambah, kurang, kali;
+  //mendeklarasikan teks1 dan teks2
+  char teks1[10], teks2[10];
+  int jlhdepan, jlhkel, jlhhuruf;
 
-//memberikan nilai beberapa elemen array 2
-array2[0] = 2;
-array2[1] = 3;
-array2[2] = 4;
+  //menampilkan pesan u/ meminta masukan dari pengguna
+  cout << "Masukkan Nama Depan Anda?: ";
+  cin >> teks1;
+  cout << "masukkan Nama Keluarga Anda?: ";
+  cin >> teks2;
+  //menghitung panjang teks
+  jlhdepan = strlen(teks1);
+  jlhkel = strlen(teks2);
+  jlhhuruf = jlhdepan + jlhkel;
 
-//membuat persamaan matematika
-tambah = array1[2] + array2[0];
-kurang = array1[3] - array2[1];
-kali = array1[4] * array2[2];
-
-//menampilkan hasil persamaan
-cout << "Array1[2] + Array2[0] = " << tambah << endl;
-cout << "Array1[3] - Array2[1] = " << kurang << endl;
-cout << "Array1[4]* Array2[3] = " << kali << endl;
-
-system ("PAUSE");
-return 0;
+  //menampilkan hasil ke pengguna
+cout << "Nama Lengkap Anda: " << teks1 << " " << teks 2 <<
+endl;
+cout << "Jumlah Huruf Nama Anda : " << jlhhuruf << " Huruf "
+<<endl;
+  system ("PAUSE")
+  return 0;
 }
