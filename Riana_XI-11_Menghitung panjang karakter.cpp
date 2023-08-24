@@ -1,11 +1,12 @@
 #include <cstdlib>
 #include <iostream>
-#include <cmath>
+#include <cstring>
 using namespace std;
 int main()
 {
-//mendeklarasikan teks1 dan teks2
+  //mendeklarasikan teks1 dan teks2
   char teks1[10], teks2 [10];
+  int jlhdepan, jlhke
 //menampilkan pesan u/ meminta masukan dari pengguna
   cout << "Masukkan Nama Depan Anda?";
   cin >> teks1;
